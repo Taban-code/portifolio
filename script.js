@@ -75,15 +75,18 @@ const heroObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (!entry.isIntersecting && window.innerWidth > 768) {
       header.classList.add('header-scrolled');
-      document.querySelector(".contact-btn").style.color = 'orange';
-      document.querySelector(".contact-btn").style.border = '1px solid orange';
 
-      document.querySelector(".contact-btn").onmouseover = () => {
-        document.querySelector(".contact-btn").style.color = 'white';
-        document.querySelector(".contact-btn").style.border = '1px solid white';
-      }
+      document.querySelectorAll(".nav ul li a").forEach(link => {
+        link.onmouseover = () => link.style.color = 'orange';
+        link.onmouseout = () => link.style.color = 'white';
+      })
       
-    } else {
+    }
+    else if (!entry.isIntersecting && window.innerWidth <= 768){
+      hamOffIcon.querySelectorAll('span').forEach(span => span.style.backgroundColor = "orange")
+    } 
+       else {
+        hamOffIcon.querySelectorAll('span').forEach(span => span.style.backgroundColor = "white")
       header.classList.remove('header-scrolled');
 
       document.querySelector(".contact-btn").onmouseover = () => {
