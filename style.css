@@ -231,7 +231,7 @@ object-position: center;
     width: 24px;
     height: 24px;
     top: 0;
-    left: 0;
+    right: 0;
     border: 1px solid white;
     border-radius: 50%;
     place-content: center;
@@ -295,24 +295,29 @@ object-position: center;
 }
 .logo a{
     font-size: 20px;
-    color: white;
+    color: orange;
+    width: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
-
+.logo a img{
+    width: 100%;
+}
 
 .about-lower-card .topper{
     display: flex;
     align-items: center;
     gap: 8px;
     width: 100%;
+    height: max-content;
+    padding: 0;
 }
 .about-lower-card{
     display: flex;
     flex-direction: column;
     padding: 12px;
-    border-radius: 16px;
     width: fit-content;
-    border-bottom: 1px solid #ffa500;
-    gap: 16px;
 }
 .about-lower{
     display: flex;
@@ -335,7 +340,7 @@ object-position: center;
     flex-direction: column;
     justify-content: flex-end;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) , url("images/hero-bg.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)) , url("images/hero-bg.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -674,10 +679,9 @@ marquee{
 .testimony
 {
     padding: 24px;
-    color: hsl(0, 0%, 80%);
     display: flex;
     flex-direction: column;
-    background: hsla(240, 95%, 8%, 0.779);
+    background: rgba(253, 236, 205, 0.3);
     gap: 20px;
     border-radius: 16px;
     transition: .3s ease;
@@ -696,7 +700,6 @@ marquee{
 }
 .author-badge cite
 {
-    color: hsl(0, 0%, 60%);
     position: relative;
 } 
 
@@ -780,9 +783,9 @@ ul
 .cta
 {
     
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(images/for-cta.jpg);
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1)),url(images/cta-img.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -969,7 +972,6 @@ ul
 {
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
     gap: 40px;
 }
 .footer-top > div{
@@ -1024,6 +1026,12 @@ ul
     font-weight: 600;
     padding-inline: 8px;
 }
+.topper-img{
+    width: 28px;
+    height: 28px;
+}
+
+
 #design, #dev, #backend, #cms{
     width: 30px;
 }
@@ -1119,7 +1127,27 @@ ul
     justify-content: space-between;
 }
 
+ #on-mobile{
+        display: none
+    }
+    #on-dsk{
+        display: flex;
+    }
+
+
+
+
+
+
+
 @media (max-width: 768px) {
+    .footer-top{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .testimonials > :nth-child(2){
+        display: none;
+    }
     .skills-main{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1134,11 +1162,11 @@ ul
     }
     .header .nav {
         position: fixed;
-        right: -100vw;
+        left: -100vw;
         top: 0;
         width: 100vw;
         min-height: 100vh;
-        background: black;
+        background: rgba(0, 0, 0, 0.7);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1146,7 +1174,7 @@ ul
         transition: .8s ease;
     }
     .header .nav.show{
-        right: 0;
+        left: 0;
     }
     .header .nav ul{
         width: 100%;
@@ -1238,7 +1266,7 @@ ul
         flex-direction: column;
     }
     .footer-top{
-        display: grid;
+        grid-template-columns: 1fr;
         place-content: center;
     }
 
@@ -1248,13 +1276,6 @@ ul
     }
     .process{
         flex-direction: column;
-    }
-    .on-mobile{
-        display: block;
-        margin-top: 40px;
-    }
-    .on-dsktop{
-        display: none;
     }
     .testimonials{
         display: flex;
@@ -1301,10 +1322,13 @@ ul
         width: 70%;
         justify-self: center;
     }
-}
+    #on-mobile{
+        display: flex;
+        justify-self: flex-start;
+        margin-top: 40px;
 
-@media (min-width: 1578px) {
-    .h1-container{
-        padding-bottom: 58px; 
+    }
+    #on-dsk{
+        display: none;
     }
 }
