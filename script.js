@@ -113,9 +113,11 @@ const mobileNav = document.querySelector(".header .nav");
 const mobileHamOffIcon = document.querySelector(".nav .ham-icon");
 hamOffIcon.onclick = () => {
   mobileNav.classList.add("show");
+  hamOffIcon.style.display = "none";
 }
 mobileHamOffIcon.onclick = () => {
   mobileNav.classList.remove("show");
+  hamOffIcon.style.display = "initial";
 }
 
 
