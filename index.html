@@ -15,11 +15,10 @@
 </head>
 <body>
 
-
     <div class="container">
         <header class="header">
             <div class="logo">
-                <a href="index.html">Taban</a>
+                <a href="index.html"><img src="images/my-logo.png" alt=""></a>
             </div>
             <nav class="nav">
                <span class="ham-icon">X</span>
@@ -44,7 +43,7 @@
                 <div class="hero-top">
                 <div class="hero-text">
                     <div class="hero-text-left">
-                        <p class="eyebrow">Hi, Its Taban</p>
+                           <p class="eyebrow muted">Hi, Its Taban</p>
                            <h1>Frontend &nbsp;<span id="typing"></span></h1>
                         <div class="muted hero-bottom">
                            <hr class="horizontal-rule">
@@ -146,21 +145,21 @@
                <div class="about-lower">
                   <div class="about-lower-card">
                      <div class="topper">
-                        <div class="dot"></div>
+                        <img src="images/creative-brain.png" class="topper-img">
                         <h5>Design-minded</h5>
                      </div>
                      <p class="muted">Clean interfaces with a clear purpose.</p>
                   </div>
                   <div class="about-lower-card">
                      <div class="topper">
-                        <div class="dot"></div>
+                        <img src="images/collaboration.png" class="topper-img">
                         <h5>Collaborative</h5>
                      </div>
                      <p class="muted">Clear communication from start to launch.</p>
                   </div>
                   <div class="about-lower-card">
                      <div class="topper">
-                        <div class="dot"></div>
+                        <img src="images/mortarboard.png" class="topper-img">
                         <h5>Elevate Academy</h5>
                      </div>
                      <p class="muted">Web development graduate</p>
@@ -193,12 +192,11 @@
                      <div class="project-text">
                         <h4>B & B cafe'</h4>
                         <p>A modern, responsive website built to streamline online menu browsing and customer ordering for an artisanal neighborhood café.</p>
-                     <h5>Tech Used</h5>
-                        <ul class="tech">
-                           <li>Wix</li>
-                        </ul>
                         <br> 
                         <ul class="qualities">
+                           <div>
+                              <span class="dot"></span><li>Wix Studio</li>
+                           </div>
                            <div>
                               <span class="dot"></span><li>Functional</li>
                            </div>
@@ -236,14 +234,10 @@
                         <h4>Signature Scents</h4>
                         <p>A modern, high-performance e-commerce website built for a premier perfume and cologne retailer. Designed with a sleek aesthetic, it features advanced fragrance filtering, immersive product galleries, and a frictionless shopping cart experience engineered for rapid conversions.</p>
                         <br> 
-                        <h5>Tech Used</h5>
-                        <ul class="tech">
-                           <li>Wordpress</li>
-                           <li>Woocommerce</li>
-                           <li>Elementor</li>
-                        </ul>
-                        <br> 
                         <ul class="qualities">
+                           <div>
+                              <span class="dot"></span><li>Wordpress | Woocommerce | Elementor</li>
+                           </div>
                            <div>
                               <span class="dot"></span><li>Functional</li>
                            </div>
@@ -279,14 +273,10 @@
                         <h4>Portfolio Website</h4>
                         <p>A modern and simple contact system built to provide a seamless communication bridge between site visitors and the stakeholder. Designed with a sleek aesthetic, showcasing my projects and capabilities.</p>
                         <br> 
-                        <h5>Tech Used</h5>
-                        <ul class="tech">
-                           <li>HTML</li>
-                           <li>CSS</li>
-                           <li>JS</li>
-                        </ul>
-                        <br> 
                         <ul class="qualities">
+                           <div>
+                              <span class="dot"></span><li>HTML | CSS | JS</li>
+                           </div>
                            <div>
                               <span class="dot"></span><li>Functional</li>
                            </div>
@@ -299,7 +289,7 @@
                         </ul>
                         <br> 
                         <div class="project-btns">
-                        <a href="https://taban-code.github.io/portfolio" class="project-btn hero-btn">Visit Live Site</a>
+                        <a href="https://taban-code.github.io/portifolio/" class="project-btn hero-btn">Visit Live Site</a>
                         </div>
                      </div>
                   </div>
@@ -388,7 +378,7 @@
                <div class="process-header">
                   <h2 class="reveal">My Creative Workflow</h2>
                   <p class="muted">Study the brief outline of how I approach my work with creativity and diligence.</p>
-                  <a href="#contact" class="hero-btn project-btn">Contact me</a>
+                  <a href="#contact" class="hero-btn project-btn" id="on-dsk">Contact me</a>
                </div>
                
                <div class="accordion-container">
@@ -476,7 +466,7 @@
                   </div>
                   <hr class="accordion-divider">
                </div>
-               <button class="hero-btn on-mobile">Book Consultation</button>
+                  <a href="#contact" class="hero-btn project-btn" id="on-mobile">Contact me</a>
                </div>
             </section> 
 
@@ -575,9 +565,6 @@
          </div>
          <footer class="footer">
             <div class="footer-top">
-               <div class="logoside">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31916.975439645237!2d33.73051608478628!3d0.5684901773265322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177efc37245a884b%3A0xa5c463e4d6656773!2sBugiri%2C%20Uganda!5e0!3m2!1sen!2sco!4v1793603114698!5m2!1sen!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-               </div>
 
                <div class="quick-contact">
                   <h5>Contact me</h5>
@@ -604,6 +591,10 @@
                   <a href="index.html#about">About</a>
                   <a href="index.html#projects">Projects</a>
                   <a href="index.html#services">Services</a>
+               </div>
+
+               <div class="logoside">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31916.975439645237!2d33.73051608478628!3d0.5684901773265322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177efc37245a884b%3A0xa5c463e4d6656773!2sBugiri%2C%20Uganda!5e0!3m2!1sen!2sco!4v1793603114698!5m2!1sen!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                </div>
             </div>
 
