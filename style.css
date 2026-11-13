@@ -1240,7 +1240,6 @@ ul
     } 
     .features .ico-box p{
         align-self: center;
-        max-width: 50%;
     } 
     .hero-bottom-right{
         display: flex;
@@ -1303,9 +1302,6 @@ ul
     .contact .contact-right{
         width: 100%;
     }
-    .process{
-        padding-inline: 100px;
-    }
     .about-lower{
     display: block;
     }
@@ -1322,7 +1318,6 @@ ul
         width: 8ch;
     }
     .hero-text-right > p{
-        width: 70%;
         justify-self: center;
     }
     #on-mobile{
