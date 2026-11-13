@@ -117,7 +117,7 @@ hamOffIcon.onclick = () => {
 }
 mobileHamOffIcon.onclick = () => {
   mobileNav.classList.remove("show");
-  hamOffIcon.style.display = "initial";
+  hamOffIcon.style.display = "flex";
 }
 
 
